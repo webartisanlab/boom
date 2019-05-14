@@ -12,6 +12,7 @@
   --header-title-anchor-background-color: #FFFFFF;
   --header-credits-background-color: #FFFFFF;
   --header-scroll-down-fill-color: #FFFFFF;
+  --header-effects-button-background-color: #FFFFFF;
   --nav-anchor-background-color: #FFFFFF;
   --footer-scroll-top-fill-color: #263238;
   --grid-block-author-background-color: #FFFFFF;
@@ -93,6 +94,25 @@ a:active {
 
 .header__credits-anchor {
   text-decoration: none;
+}
+
+.header__effects {
+  margin-top: 30px;
+}
+
+.header__effects-button {
+  padding: 5px 20px;
+  text-transform: uppercase;
+  background-color: var(--header-effects-button-background-color);
+  border: 0;
+}
+
+.header__effects-button:hover {
+  letter-spacing: 5px;
+}
+
+.header__effects-button:not(:last-of-type) {
+  margin-right: 15px;
 }
 
 
