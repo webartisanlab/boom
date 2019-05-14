@@ -10,7 +10,10 @@
   --anchor-hover-font-color: #03A9F4;
   --header-background-color: #263238; /* placeholder */
   --header-background-image: url('../img/steven-roe-1076649-unsplash.jpg');
+  --header-title-anchor-background-color: #FFFFFF;
+  --header-credits-background-color: #FFFFFF;
   --header-scroll-down-fill-color: #FFFFFF;
+  --nav-anchor-background-color: #FFFFFF;
 }
 
 html,
@@ -29,9 +32,12 @@ body {
 
 a:link {
   color: var(--anchor-link-font-color);
+  transition: all .5s ease-in-out;
+}
+
+a:link:not(.header__credits-anchor) {
   text-decoration: underline;
   text-decoration-skip-ink: auto;
-  transition: all .5s ease-in-out;
 }
 
 a:visited {
@@ -61,6 +67,11 @@ h6 {
 /* HEADER & NAV */
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  position: relative;
   width: 100%;
   height: 100vh;
   background-color: var(--header-background-color);
@@ -70,15 +81,56 @@ h6 {
 
 .header__title {
   font-size: 3rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
-.header__title-anchor {}
+.header__title-anchor {
+  padding: 15px 30px;
+  background-color: var(--header-title-anchor-background-color);
+}
+
+.header__credits {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  padding: 5px 30px;
+  background-color: var(--header-credits-background-color);
+}
+
+.header__credits-anchor {
+  text-decoration: none;
+}
 
 .icon.header__scroll-down {
+  position: absolute;
+  bottom: 15px;
   fill: var(--header-scroll-down-fill-color);
+  cursor: pointer;
 }
 
 
 
-.nav {}
-.nav__anchor {}
+.nav {
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.nav__anchor {
+  padding: 5px 20px;
+  background-color: var(--nav-anchor-background-color);
+}
+
+.nav__anchor:hover {
+  letter-spacing: 5px;
+}
+
+.nav__anchor:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+
+
+/* MAIN CONTENT */
+
+.content {}
