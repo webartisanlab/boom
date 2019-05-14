@@ -1,0 +1,23 @@
+/* GENERAL */
+
+:root {
+  --main-font-family: 'Noto Sans', sans-serif;
+  --alternative-font-family: 'Noto Serif', serif;
+}
+
+body {
+  font: 17px var(--main-font-family);
+  background-color: #ECEFF1;
+  color: #263238;
+}
+
+/* HEADER & NAV */
+
+.header {}
+.header__title {}
+.header__title-anchor {}
+
+
+
+.nav {}
+.nav__anchor {}
