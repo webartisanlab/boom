@@ -2,7 +2,6 @@
 
 :root {
   --main-font-family: 'Noto Sans', sans-serif;
-  --alternative-font-family: 'Noto Serif', serif;
   --body-background-color: #ECEFF1;
   --body-font-color: #263238;
   --anchor-link-font-color: #E91E63;
@@ -56,15 +55,6 @@ a:active {
 }
 
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: alt(--alternative-font-family);
-}
 
 /* HEADER & NAV */
 
