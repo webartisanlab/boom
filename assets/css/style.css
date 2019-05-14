@@ -116,12 +116,17 @@ a:active {
 
 
 
-/* MAIN CONTENT */
+/* MAIN CONTENT & GRID */
 
 .content {
   min-height: calc(100vh - 100px);
 }
 
+.grid {
+  display: grid;
+}
+
+.grid__block {}
 
 
 /* FOOTER */
