@@ -120,6 +120,7 @@ a:active {
 /* MAIN CONTENT & GRID */
 
 .content {
+  margin-top: 30px;
   min-height: calc(100vh - 100px);
 }
 
@@ -162,6 +163,7 @@ a:active {
   align-items: center;
   justify-content: center;
   height: 100px;
+  margin-top: 30px;
 }
 
 
