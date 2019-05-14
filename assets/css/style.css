@@ -68,7 +68,10 @@ h6 {
   background-size: cover;
 }
 
-.header__title {}
+.header__title {
+  font-size: 3rem;
+}
+
 .header__title-anchor {}
 
 .icon.header__scroll-down {
