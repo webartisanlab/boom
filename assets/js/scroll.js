@@ -1,10 +1,9 @@
 let scrollDownElement = document.querySelector('.header__scroll-down')
     scrollDownElement.addEventListener('click', function() {
-      window.scrollBy(0, 100 * window.innerHeight/100)
+      window.scrollTo(0, document.documentElement.scrollHeight)
     })
 
 let scrollTopElement = document.querySelector('.footer__scroll-top')
     scrollTopElement.addEventListener('click', function() {
-      // window.scrollBy(0, -100 * window.innerHeight/100)
-      window.scrollBy(0, window.innerHeight * -1)
+      window.scrollTo(0, 0)
     })
