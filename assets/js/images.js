@@ -2,27 +2,27 @@ let container = document.getElementsByClassName('content')[0]
 
 let images = [
   {
-    'imageURL': '../img/waranont-joe-1347698-unsplash.jpg',
+    'imageURL': '../img/alt/waranont-joe-1347698-unsplash.jpg',
     'imageAuthorURL': 'https://unsplash.com/@tricell1991',
     'imageAuthorNickname': 'tricell1991'
   },
   {
-    'imageURL': '../img/steven-roe-1058281-unsplash.jpg',
+    'imageURL': '../img/alt/steven-roe-1058281-unsplash.jpg',
     'imageAuthorURL': 'https://unsplash.com/@steveroe_',
     'imageAuthorNickname': 'stevenroe_'
   },
   {
-    'imageURL': '../img/joshua-fuller-368384-unsplash.jpg',
+    'imageURL': '../img/alt/joshua-fuller-368384-unsplash.jpg',
     'imageAuthorURL': 'https://unsplash.com/@joshuafuller',
     'imageAuthorNickname': 'joshuafuller'
   },
   {
-    'imageURL': '../img/andrew-amistad-70863-unsplash.jpg',
+    'imageURL': '../img/alt/andrew-amistad-70863-unsplash.jpg',
     'imageAuthorURL': 'https://unsplash.com/@aamistad',
     'imageAuthorNickname': 'aamistad'
   },
   {
-    'imageURL': '../img/efe-kurnaz-315384-unsplash.jpg',
+    'imageURL': '../img/alt/efe-kurnaz-315384-unsplash.jpg',
     'imageAuthorURL': 'https://unsplash.com/@catcap',
     'imageAuthorNickname': 'catcap'
   }
