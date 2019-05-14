@@ -5,5 +5,6 @@ let scrollDownElement = document.querySelector('.header__scroll-down')
 
 let scrollTopElement = document.querySelector('.footer__scroll-top')
     scrollTopElement.addEventListener('click', function() {
-      window.scrollBy(0, -100 * window.innerHeight/100)
+      // window.scrollBy(0, -100 * window.innerHeight/100)
+      window.scrollBy(0, window.innerHeight * -1)
     })
