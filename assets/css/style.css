@@ -14,6 +14,7 @@
   --header-scroll-down-fill-color: #FFFFFF;
   --nav-anchor-background-color: #FFFFFF;
   --footer-scroll-top-fill-color: #263238;
+  --grid-block-author-background-color: #FFFFFF;
 }
 
 html,
@@ -124,9 +125,33 @@ a:active {
 
 .grid {
   display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(0, 150px));
+  grid-gap: 30px;
 }
 
-.grid__block {}
+.grid__block {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+}
+
+.grid__block:hover .grid__block-author {
+  transition: .5s ease-in-out;
+  opacity: 1;
+}
+
+.grid__block-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--grid-block-author-background-color);
+  opacity: 0;
+}
+
 
 
 /* FOOTER */
