@@ -22,7 +22,7 @@ let images = [
     'imageAuthorNickname': 'aamistad'
   },
   {
-    'imageURL': '../img/efe-kurnaz-315384-unsplash',
+    'imageURL': '../img/efe-kurnaz-315384-unsplash.jpg',
     'imageAuthorURL': 'https://unsplash.com/@catcap',
     'imageAuthorNickname': 'catcap'
   }
