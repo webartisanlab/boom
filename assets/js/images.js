@@ -28,23 +28,29 @@ let images = [
   }
 ]
 
-for (let index = 0; index < images.length; index++) {
-  let imageURL = window.location.host + 'assets/img/' + images[index].imageURL
-  let imageAuthorURL = images[index].imageAuthorURL
-  let imageAuthorNickname = images[index].imageAuthorNickname
+let i = 0
 
-  let imageBlock = document.createElement('div')
-      imageBlock.style.backgroundImage = 'url(' + imageURL + ')'
-      imageBlock.classList.add('grid__block')
+while (i < 5) {
+  for (let index = 0; index < images.length; index++) {
+    let imageURL = window.location.host + 'assets/img/' + images[index].imageURL
+    let imageAuthorURL = images[index].imageAuthorURL
+    let imageAuthorNickname = images[index].imageAuthorNickname
+  
+    let imageBlock = document.createElement('div')
+        imageBlock.style.backgroundImage = 'url(' + imageURL + ')'
+        imageBlock.classList.add('grid__block')
+  
+    let imageAuthorBlock = document.createElement('div')
+        imageAuthorBlock.classList.add('grid__block-author')
+        
+    let imageAuthorBlockURL = document.createElement('a')
+        imageAuthorBlockURL.setAttribute('href', imageAuthorURL)
+        imageAuthorBlockURL.innerHTML = imageAuthorNickname
+  
+    imageAuthorBlock.appendChild(imageAuthorBlockURL)
+    imageBlock.appendChild(imageAuthorBlock)
+    container.appendChild(imageBlock)
+  }
 
-  let imageAuthorBlock = document.createElement('div')
-      imageAuthorBlock.classList.add('grid__block-author')
-      
-  let imageAuthorBlockURL = document.createElement('a')
-      imageAuthorBlockURL.setAttribute('href', imageAuthorURL)
-      imageAuthorBlockURL.innerHTML = imageAuthorNickname
-
-  imageAuthorBlock.appendChild(imageAuthorBlockURL)
-  imageBlock.appendChild(imageAuthorBlock)
-  container.appendChild(imageBlock)
+  i++
 }
